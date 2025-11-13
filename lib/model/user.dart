@@ -12,21 +12,7 @@ class User {
     required this.password,
   });
 
-  
-
-  User copyWith({
-    int? id,
-    String? username,
-    String? email,
-    String? password,
-  }) {
-    return User(
-      id: id ?? this.id,
-      username: username ?? this.username,
-      email: email ?? this.email,
-      password: password ?? this.password,
-    );
-  }
+  // constructor, conversi dari atau ke json
 
   Map<String, dynamic> toMap() {
     return {
