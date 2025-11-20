@@ -17,6 +17,7 @@ class Produk {
     required this.category,
     required this.image,
   });
+  
 
   Produk copyWith({
     int? id,
@@ -58,9 +59,9 @@ class Produk {
     );
   }
 
-  // String toJson() => json.encode(toMap());
+  String toJson() => json.encode(toMap());
 
-  // factory Produk.fromJson(String source) => Produk.fromMap(json.decode(source));
+  factory Produk.fromJson(String source) => Produk.fromMap(json.decode(source));
 
   @override
   String toString() {
